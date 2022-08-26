@@ -1,0 +1,73 @@
+.sidebar {
+  width: fit-content;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+
+  padding: 0 2em;
+  padding-top: 8em;
+
+  background: white;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+
+  main {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+
+      padding: 0.5em 1em;
+      border: 1px solid var(--clr-border);
+      border-radius: 5px;
+
+      img {
+        width: calc(var(--fs-body));
+        height: calc(var(--fs-body));
+      }
+
+      span {
+        font-size: calc(var(--fs-body));
+        font-family: var(--ff-2);
+      }
+
+      &:hover {
+        background: var(--clr-sec);
+        border-color: var(--clr-ter);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+      }
+    }
+
+    a.active {
+      background: var(--clr-sec);
+      border-color: var(--clr-ter);
+    }
+  }
+}
+
+.logOut {
+  justify-content: center;
+
+  margin-top: auto;
+  margin-bottom: 2em;
+  text-align: center;
+
+  &:hover {
+    transition: 0.2s;
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--clr-ter);
+  }
+}

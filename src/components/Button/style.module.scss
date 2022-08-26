@@ -1,0 +1,83 @@
+.button {
+  all: unset;
+  font-family: var(--ff-2);
+
+  // padding: 0.5em 1em;
+  a {
+    display: inline-block;
+    padding: 0.5em 1em;
+  }
+  border-radius: 5px;
+
+  color: var(--clr-pri);
+  background: var(--clr-ter);
+  border : 1px solid var(--clr-ter);
+  cursor: pointer;
+
+  min-width: 6em;
+  text-align: center;
+
+  transition: 0.2s;
+}
+
+.button_notLink {
+  padding : 0.5em 1em;
+}
+
+.button_animate:hover {
+  transform: translateY(-2px);
+}
+
+.button_outline {
+  color: var(--clr-ter);
+  background: var(--clr-pri);
+  border : 1px solid var(--clr-ter);
+}
+
+.button_special {
+  background: #FEFCE8;
+  color : #CA8A04;
+
+  font-size: 14px;
+  font-family: var(--ff-1);
+  border-color: transparent;
+
+  padding: 0.5em 1em;
+}
+
+.button_large {
+  // padding: 1em 4em;
+  a {
+    padding: 1rem 4rem;
+    text-decoration: none;
+  }
+  font-size: calc(var(--fs-body));
+}
+
+.button_stretch {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+
+.button_normal {
+  padding: 0.5em 1em;
+}
+
+.button_invertOnHover {
+  &:hover {
+    background-color: var(--clr-ter);
+    color: #fff;
+    border : 1px solid var(--clr-ter);
+    transition: 0.2s;
+  }
+}
+
+.button_unInvertOnHover {
+  &:hover {
+    background-color: #fff;
+    color: var(--clr-ter);
+    border : 1px solid var(--clr-ter);
+    transition: 0.2s;
+  }
+}

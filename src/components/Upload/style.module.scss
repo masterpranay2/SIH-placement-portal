@@ -1,0 +1,135 @@
+.upload {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+  h1 {
+    font-family: var(--ff-2);
+    font-weight: 500;
+  }
+
+  main {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+
+    box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.2), 0 0px 0 1px rgba(0, 0, 0, 0.14), 0 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+      border-bottom: 1px solid #e6e6e6;
+
+      .circleWrapper {
+        display: flex;
+        gap: 0.5em;
+        span {
+          width: 1.5em;
+          height: 1.5em;
+          border-radius: 50%;
+          border: 1px solid var(--clr-border);
+
+          &:hover {
+            background: var(--clr-border);
+          }
+        }
+      }
+
+      .proceedButton {
+        font-size: var(--fs-body);
+        cursor: pointer;
+        font-weight: 500;
+        font-family: var(--ff-2);
+        transition: 0.2s;
+
+        &:hover {
+          color: var(--clr-ter);
+        }
+      }
+    }
+  }
+}
+
+.uploadWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+
+  padding: 2em;
+
+  h2 {
+    font-family: var(--ff-2);
+    font-weight: 500;
+    color : var(--clr-ter);
+    font-size: var(--fs-l);
+  }
+
+  .uploadArea {
+    width: calc(100% - 2em);
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    border: 2px var(--clr-border) dashed;
+    border-radius: 10px;
+
+    cursor: pointer;
+  }
+}
+
+.tableWrapper {
+  width: 100%;
+  padding: 1em;
+  overflow-x: scroll;
+
+  table {
+    border: 1px solid var(--clr-border);
+  }
+
+  td, th {
+    border : 1px solid var(--clr-border);
+    padding: 0.5em;
+  }
+
+  tr {
+    &:hover {
+      background: var(--clr-sec);
+    }
+  }
+
+  &::-webkit-scrollbar {
+    height: 5px;
+    margin-top: -5px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: var(--clr-border);
+    border-radius: 1em;
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.saveButton {
+  margin-top: 2em;
+}
+
+.rowError {
+  --clr-error: #ff5252;
+  background: var(--clr-error);
+}

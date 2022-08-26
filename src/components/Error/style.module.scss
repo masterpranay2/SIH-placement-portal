@@ -1,0 +1,49 @@
+.error {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    justify-content: center;
+}
+
+.errorDetails, .errorIllustration {
+    width: 50%;
+}
+
+.errorIllustration img {
+    width: 100%;
+}
+
+.errorDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-start;
+    h2 {
+        font-size: var(--fs-xl);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: var(--ff-2);
+        color: var(--clr-ter);
+        span {
+            color: var(--clr-text)
+        }
+    }
+    p,button {
+        font-size: var(--fs-body);
+        font-family: var(--ff-1);
+    }
+    button {
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .errorIllustration {
+        display: none;
+    }
+    .errorDetails {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,67 @@
+.work {
+  width: 100%;
+  margin: 4rem 0;
+  padding: 0 8em;
+
+  header {
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      text-transform: uppercase;
+      font-family: var(--ff-2);
+      font-size: var(--fs-l);
+      font-weight: 500;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 2em;
+  }
+}
+
+.workcardlist {
+  width: 100%;
+  margin-top: 6em;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3em;
+  row-gap: 6em;
+}
+
+.workcard {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  padding: 2em;
+
+  background: var(--clr-sec);
+
+  border: 1px solid var(--clr-ter);
+
+  box-shadow: 10px 10px 0px var(--clr-ter);
+  border-radius: 10px;
+
+  max-width: 30ch;
+
+  @media (max-width: 900px) {
+    max-width: 40ch;
+  }
+}
+
+.heading {
+  font-size: 24px;
+  font-family: var(--ff-2);
+  max-width: 21ch;
+}
+
+.heading_highlighted {
+  color : #5D7C3F;
+}
+
+.bodytext {
+  font-size: var(--fs-body);
+  opacity: 0.7;
+}
